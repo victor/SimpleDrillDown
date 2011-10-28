@@ -52,4 +52,6 @@
 
 @property (nonatomic, strong) UIWindow *window;
 
+- (void)customizeAppearance;
+
 @end

@@ -73,8 +73,17 @@
     DataController *controller = [[DataController alloc] init];
     rootViewController.dataController = controller;
     self.dataController = controller;
+    
+    [self customizeAppearance];
+    
 }
 
+- (void)customizeAppearance;
+{
+    [[UINavigationBar appearance] setTintColor:[UIColor orangeColor]];
+    [[UILabel appearance] setTextColor:[UIColor purpleColor]];
+    
+}
 
 
 @end
