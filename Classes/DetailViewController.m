@@ -136,6 +136,7 @@
     }
     
     cell.textLabel.text = cellText;
+    cell.textLabel.textColor = [UIColor greenColor];
     return cell;
 }
 
