@@ -136,7 +136,11 @@
     }
     
     cell.textLabel.text = cellText;
-    cell.textLabel.textColor = [UIColor greenColor];
+    if ([cellText hasSuffix:@"s"]) {
+        cell.textLabel.textColor = [UIColor greenColor];
+    } else {
+        cell.textLabel.textColor = [UIColor redColor];
+    }
     return cell;
 }
 
